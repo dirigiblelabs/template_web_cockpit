@@ -1,13 +1,18 @@
 iframe, .embedded {
   position: fixed;
-  top: 51px;
-  left: 25px;
-  width: 100%;
+  top: 3.4em;
+  left: 17%;
+  width: 82%;
   height: 500px;
   border: 0px;
-  --background: green;
 }
 
 .list-group-item {
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.navbar-nav>li {
+	    width: 100%;
+	}
 }
