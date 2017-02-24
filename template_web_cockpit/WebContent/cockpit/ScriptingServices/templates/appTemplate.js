@@ -23,8 +23,8 @@ controllers.controller('CockpitCtrl', ['${dollar}scope', '${dollar}location', '$
 		${dollar}scope.location = ${dollar}location;
 
 		${dollar}http.get(API_SIDEBAR).success(function (data) {
-			${dollar}scope.sidebarData = data;
-			loadPageFromPath(${dollar}scope.sidebarData);
+			${dollar}scope.sidebar = data;
+			loadPageFromPath(${dollar}scope.sidebar);
 		});
 
 		${dollar}http.get(API_MENU).success(function (data) {
